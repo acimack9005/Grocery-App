@@ -15,6 +15,8 @@
 		10BD4E0B1D9309A6000D5042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BD4E091D9309A6000D5042 /* LaunchScreen.storyboard */; };
 		10BD4E161D9309A6000D5042 /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD4E151D9309A6000D5042 /* MyAppTests.swift */; };
 		10BD4E211D9309A6000D5042 /* MyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD4E201D9309A6000D5042 /* MyAppUITests.swift */; };
+		10F3E0681D999BE6008EC3FF /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3E0661D999BE6008EC3FF /* List+CoreDataProperties.swift */; };
+		10F3E0691D999BE6008EC3FF /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3E0671D999BE6008EC3FF /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		10BD4E1C1D9309A6000D5042 /* MyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BD4E201D9309A6000D5042 /* MyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppUITests.swift; sourceTree = "<group>"; };
 		10BD4E221D9309A6000D5042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F3E0661D999BE6008EC3FF /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		10F3E0671D999BE6008EC3FF /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		10BD4DF11D9309A6000D5042 = {
 			isa = PBXGroup;
 			children = (
+				10F3E0661D999BE6008EC3FF /* List+CoreDataProperties.swift */,
+				10F3E0671D999BE6008EC3FF /* List.swift */,
 				10BD4DFC1D9309A6000D5042 /* MyApp */,
 				10BD4E141D9309A6000D5042 /* MyAppTests */,
 				10BD4E1F1D9309A6000D5042 /* MyAppUITests */,
@@ -262,6 +268,8 @@
 				10BD4E061D9309A6000D5042 /* MyApp.xcdatamodeld in Sources */,
 				10BD4E001D9309A6000D5042 /* ViewController.swift in Sources */,
 				10BD4DFE1D9309A6000D5042 /* AppDelegate.swift in Sources */,
+				10F3E0691D999BE6008EC3FF /* List.swift in Sources */,
+				10F3E0681D999BE6008EC3FF /* List+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +496,7 @@
 				10BD4E271D9309A6000D5042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10BD4E281D9309A6000D5042 /* Build configuration list for PBXNativeTarget "MyAppTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				10BD4E2A1D9309A6000D5042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10BD4E2B1D9309A6000D5042 /* Build configuration list for PBXNativeTarget "MyAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				10BD4E2D1D9309A6000D5042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
