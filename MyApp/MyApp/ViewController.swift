@@ -9,6 +9,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var addButtonOutlet: UIBarButtonItem!
  
     var list = [List]()
+    var a = "a"
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
