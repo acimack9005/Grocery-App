@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q5N-uB-GIH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="91X-7b-Qth">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -69,27 +69,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3194.5" y="354.5"/>
+            <point key="canvasLocation" x="4985.5" y="353.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BdP-h0-9AL">
+        <!--Tab Bar Controller-->
+        <scene sceneID="dMG-yt-Y2e">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q5N-uB-GIH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="iVb-Ve-esh"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="91X-7b-Qth" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ggD-61-Ohf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E5x-hX-cqQ">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3Cw-eF-vRw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XEw-mS-rDK" kind="relationship" relationship="viewControllers" id="Opy-Q1-PxB"/>
+                        <segue destination="I41-Gg-M6t" kind="relationship" relationship="viewControllers" id="zrR-8D-2vx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hA-xM-rtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4119" y="354"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="rCf-Lw-bUy">
+            <objects>
+                <viewController id="I41-Gg-M6t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="spI-Vm-Wk6"/>
+                        <viewControllerLayoutGuide type="bottom" id="jmF-Ju-GR7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bgT-TZ-jMu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marianos" translatesAutoresizingMaskIntoConstraints="NO" id="Qob-56-lX5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="nPg-Wj-T8R"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxx-kX-Lj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4118.5" y="1119.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Rhm-Y7-BCd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XEw-mS-rDK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9sM-Gj-N8D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4c-Bs-VjB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="39H-N9-XzV"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="80T-wV-wTf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s3X-IJ-3Id" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8c3-1h-N9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780.5" y="354.5"/>
+            <point key="canvasLocation" x="4555.5" y="353.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="marianos" width="675" height="810"/>
+    </resources>
 </document>
