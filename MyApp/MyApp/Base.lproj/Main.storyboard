@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="4119" y="354"/>
         </scene>
-        <!--Map-->
+        <!--Item-->
         <scene sceneID="rCf-Lw-bUy">
             <objects>
                 <viewController id="I41-Gg-M6t" sceneMemberID="viewController">
@@ -102,14 +102,9 @@
                     <view key="view" contentMode="scaleToFill" id="bgT-TZ-jMu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marianos" translatesAutoresizingMaskIntoConstraints="NO" id="Qob-56-lX5">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="nPg-Wj-T8R"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="nPg-Wj-T8R"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxx-kX-Lj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,7 +131,4 @@
             <point key="canvasLocation" x="4555.5" y="353.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="marianos" width="675" height="810"/>
-    </resources>
 </document>
