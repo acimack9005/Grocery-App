@@ -32,7 +32,7 @@
                                                     <rect key="frame" x="15" y="12" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iQp-iO-JeT">
@@ -111,11 +111,11 @@
             </objects>
             <point key="canvasLocation" x="4118.5" y="1119.5"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="Rhm-Y7-BCd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XEw-mS-rDK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9sM-Gj-N8D"/>
+                    <tabBarItem key="tabBarItem" title="List" id="9sM-Gj-N8D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4c-Bs-VjB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

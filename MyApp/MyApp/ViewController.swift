@@ -48,10 +48,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
     
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell")
-        let aisle = Int(list[indexPath.row].location!)
         
         cell?.textLabel?.text = list[indexPath.row].item
-        cell?.detailTextLabel?.text = "Aisle: " + String(aisle)
         cell!.textLabel?.font = UIFont(name: "Times New Roman", size: 30)
         cell!.detailTextLabel?.font = UIFont(name: "Times New Roman", size: 20)
         
@@ -113,10 +111,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    func saveNewItem(item : String, location: Int!, amount: Int!)
+    func saveNewItem(item : String, amount: Int!)
     {
 
-        let newItem = List.createInManagedObjectContext(self.managedObjectContext, item: item, location: location, amount: amount)
+        let newItem = List.createInManagedObjectContext(self.managedObjectContext, item: item, location: 1, amount: amount)
 
         self.fetchList()
 
@@ -155,7 +153,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let alert = UIAlertController(title: "Add an Item", message: nil, preferredStyle: .Alert)
         
         alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in textField.placeholder = "Item"})
-        alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in textField.placeholder = "Aisle"})
         alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in textField.placeholder = "Amount"})
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
@@ -163,9 +160,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let textField = alert.textFields![0]
             let textFieldTwo = alert.textFields![1]
-            let textFieldThree = (alert.textFields![2])
 
-            self.saveNewItem(textField.text!, location: Int(textFieldTwo.text!)!, amount: Int(textFieldThree.text!)!)
+            self.saveNewItem(textField.text!, amount: Int(textFieldTwo.text!)!)
             
             self.tableView.reloadData()
             
